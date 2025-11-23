@@ -11,6 +11,6 @@ server.use(express.json());
 import addRoutes from './rotas.js';
 addRoutes(server);
 
-const PORTA = process.env.PORTA;
+const PORT = process.env.PORT;
 
-server.listen(PORTA, () => console.log("API subiu na porta " + PORTA));
+server.listen(PORT, () => console.log("API subiu na PORT " + PORT));
