@@ -21,6 +21,8 @@ let con = await mysql.createConnection({
   }
 })
 
+console.log("Database Configured:", con.config.database);
+
 console.log("--> Conexão com BD realizada!")
 
 export default con;
